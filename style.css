@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{ 
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(1.jpg);
+    background-size: cover; 
+    background-position: center;
+
+
+}
+.navbar{ 
+    width: 92%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.logo{
+    font-size: 27px;    
+    color: #e2b714;
+    text-decoration: none;
+    font-weight: 600;
+}
+.navbar ul li{
+    font-size: 18px;
+    font-weight: 350;
+    color: #fff;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #e2b714; 
+    position: absolute; 
+    left: 0; 
+    bottom: -10px;
+    transition: 0.5s;
+}   
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content {
+    max width: 600px;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.home-content h3 { 
+    font-size: 32px;
+    font-weight: 600;
+    color: #e2b714;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a { 
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 100%;
+    background: #e2b714;
+    border: 2px solid #e2b714;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #e2b714;
+}
